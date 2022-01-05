@@ -1,3 +1,12 @@
+
+/**
+ * @jest-environment jsdom
+ */
+
+
+
+
+
 const addition = require('../calc');
 // const subtraction = require('../calc');
 // const multiply = require('../calc');
