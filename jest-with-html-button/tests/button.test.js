@@ -9,7 +9,7 @@ const buttonClick = require("../script");
 beforeAll(() => {  // does not take any arguements or parameters and this sets what the initial value is before any changes are made
     // document.body.innerHTML = "<p id='par'></p>"; // this tests one component on the DOM
     let fs = require('fs');     //    the following 5 lines can be seen as boilerplate code and dont need to be changed each time
-    let fileContents = fs.readFileSync('button.html', 'UTF-8');
+    let fileContents = fs.readFileSync('button.html', 'UTF-8'); // the first value will be the html page you wish to add
     document.open();
     document.write(fileContents);
     document.close();         // down to here (boilerplate)
