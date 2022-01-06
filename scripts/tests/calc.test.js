@@ -3,7 +3,14 @@
  * @jest-environment jsdom
  */
 
-
+/**
+ * 
+ * use npm init to initialise jest when a new repo is created,
+ * and press enter all the way until 'testing commmand' and set 'jest' as the testing command'
+ * create your tests folder and your 'filename'.test.js file filename being whatever your filename is,
+ * now you can use 'npm install jest --save-dev to install jest,
+ * once its installed you use npm test in the console to run teh tests.
+ */
 
 
 
