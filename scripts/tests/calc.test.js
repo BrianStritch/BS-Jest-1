@@ -17,7 +17,18 @@
 //const addition = require('../calc'); // this would be format for testing one item/function only
 const {addition, subtraction, division, multiply} = require('../calc'); // this would be format for testing more than one item/function
 
+/**
+ * the before all adds mock values pretending that they are the values in the dom for testing purposes
+ */
 
+beforeAll(() => {  // does not take any arguements or parameters and this sets what the initial value is before any changes are made
+    // document.body.innerHTML = "<p id='par'></p>"; // this tests one component on the DOM
+    let fs = require('fs');     //    the following 5 lines can be seen as boilerplate code and dont need to be changed each time
+    let fileContents = fs.readFileSync('button.html', 'UTF-8'); // the first value will be the html page you wish to add
+    document.open();
+    document.write(fileContents);
+    document.close();         // down to here (boilerplate)
+});
 
 describe('calculator', () => {
     describe('addition function', () => {
